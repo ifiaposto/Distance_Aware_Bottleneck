@@ -36,7 +36,7 @@ FLAGS = flags.FLAGS
 flags.DEFINE_integer('epochs', 1500, 'Number of epochs.')
 flags.DEFINE_integer('num_train_examples', 20,
                      'Number of training datapoints.')
-flags.DEFINE_float('blahut_arimoto_learning_rate', 0.01,
+flags.DEFINE_float('rdfc_learning_rate', 0.01,
                    'Learning rate for the codebook.')
 flags.DEFINE_float('learning_rate', 0.001,
                    'Learning rate for main network.')
@@ -139,14 +139,20 @@ def main(argv):
     model = multilayer_perceptron()
 
     codebook_optimizer = \
-        tf.keras.optimizers.Adam(FLAGS.blahut_arimoto_learning_rate)
+        tf.keras.optimizers.Adam(FLAGS.rdfc_learning_rate)
 
     optimizer = tf.keras.optimizers.Adam(FLAGS.learning_rate)
 
     @tf.function
-    def blahut_arimoto_step(inputs):
+    def rdfc_step(inputs):
         """
-            This step trains the codebook and learns prior centroid probabilities.
+            This function computes Rate Distortion Finite Cardinality (RDFC) [1].
+            In this phase, the codebook (the centroids) is trained.
+            
+            References
+            
+            [1] Banerjee A, Dhillon I, Ghosh J, Merugu S. An information theoretic analysis of 
+                maximum likelihood mixture estimation for exponential families. ICML 2004.
         """
 
         def centroid_step_fn(inputs):
@@ -174,7 +180,8 @@ def main(argv):
 
         def centroid_probs_step_fn(inputs):
             """
-                Gather conditional centroid probabilities (E-step) needed for the prior centroid probabilities.
+                Gather conditional centroid probabilities (E-step) needed for 
+                the prior centroid probabilities.
             """
 
             model(inputs, training=True)
@@ -238,7 +245,7 @@ def main(argv):
 
         train_step(x_train, y_train)
 
-        blahut_arimoto_step(x_train)
+        rdfc_step(x_train)
 
     # ===========================      qualitative evaluation       =========================== #
 
