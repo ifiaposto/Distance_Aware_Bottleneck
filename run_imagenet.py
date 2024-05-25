@@ -203,7 +203,7 @@ def main(argv):
                 )
                 metrics.update(ood_metrics)
         
-        if FLAGS.eval_on_ood:
+        if FLAGS.eval_calibration:
             #Calibration metrics. 
             calibration_metrics = metrics_utils.create_uncertainty_metrics(
                 uncertainty_scores={"codebook_distance"},
@@ -546,14 +546,15 @@ def main(argv):
             metrics["test/accuracy"].result() * 100,
         )
         
-        metrics_utils.update_uncertainty_metrics(
-            strategy=strategy, 
-            metrics=metrics, 
-            metric_prefix="calibration",
-            binary_labels=1-return_values["matches"], 
-            uncertainty_scores=return_values["codebook_distance"],
-            uncertainty_name= "codebook_distance"
-        )
+        if FLAGS.eval_calibration:
+            metrics_utils.update_uncertainty_metrics(
+                strategy=strategy, 
+                metrics=metrics, 
+                metric_prefix="calibration",
+                binary_labels=1-return_values["matches"], 
+                uncertainty_scores=return_values["codebook_distance"],
+                uncertainty_name= "codebook_distance"
+            )
 
 
         if FLAGS.eval_on_ood:
