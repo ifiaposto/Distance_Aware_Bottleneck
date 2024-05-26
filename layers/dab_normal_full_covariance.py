@@ -360,7 +360,7 @@ class NormalFullCovarianceDAB(_NormalDAB):
 
         # global_cond_centroid_probs: [batch_size, codebook_size]
         # global_cond_centroid_probs(i,j): how much datapoint i contributes to the covariance matrix of centroid j
-        # we rectify datapoint's contribution for facilitating training.
+        # we consider a Dirichlet prior with ak=5.0 to avoid overconcentration and facilitating training.
         global_cond_centroid_probs = (global_cond_centroid_probs + 5.0) / (
             tf.math.reduce_sum(global_cond_centroid_probs, axis=0) + 5 * global_batch_size
         )
