@@ -33,6 +33,12 @@ pip install -r requirements.txt
 ``` 
 
 ## Datasets
+All datasets are placed in ~/tensorflow_datasets
+
+* Download from [Tensorflow Datasets](https://www.tensorflow.org/datasets) for cifar10, cifar100, SVHN.
+* Use [cifar10_corrupted](https://www.tensorflow.org/datasets/catalog/cifar10_corrupted) for the cifar10 noise corruptions.
+* For preparing ImageNet for use with tensorflow_datasets, these [instructions](https://github.com/leondgarse/keras_cv_attention_models/discussions/9) might be useful.
+* For ImageNetO, please download the serialized dataset from [here](https://drive.google.com/file/d/1D3lfSmd4cv7cSqw1Kj65Dn6jQuBccRJb/view?usp=sharing), and place it in the ~/tensorflow_datasets directory.
 
 ## Train DAB
 
