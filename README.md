@@ -68,9 +68,9 @@ python synthetic_regression.py --example=2 --codebook_size=2
 
 ### Commands
 
-### Cifar10
+#### Cifar10
 
-### ImageNet-1K
+#### ImageNet-1K
 
 ## Citation
 
