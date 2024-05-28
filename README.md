@@ -66,6 +66,8 @@ python synthetic_regression.py --example=2 --codebook_size=2
 
 ### Trained Models
 
+You can download trained DAB models presented in the paper [here](https://drive.google.com/file/d/1Ql1pJV3xFgIgLabqWegeNW74WCdwpmNL/view?usp=drive_link).
+
 ### Commands
 
 #### Cifar10
