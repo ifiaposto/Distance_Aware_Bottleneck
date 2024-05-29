@@ -47,14 +47,14 @@ All datasets are placed in ~/tensorflow_datasets
  <details><summary>Figure 3a in the paper.   </summary>
  
 ```
-python synthetic_regression.py --example=1 --codebook_size=1
+python synthetic_regression_demo.py --example=1 --codebook_size=1
 ```  
 </details>
 
  <details><summary>Figure 3b in the paper.   </summary>
 
 ```
-python synthetic_regression.py --example=2 --codebook_size=2
+python synthetic_regression_demo.py --example=2 --codebook_size=2
 ```  
 </details>
 
