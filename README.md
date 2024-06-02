@@ -65,7 +65,7 @@ python synthetic_regression_demo.py --example=2 --codebook_size=2
  <details><summary>Train DAB on CIFAR-10 .   </summary>
 
 ```
-python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epochs=200 --seed=3 --checkpoint_interval=-1
+python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epochs=200 --seed=3
 ```  
 </details>
 
@@ -76,7 +76,7 @@ python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epoch
  <details><summary>Calibrated DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
 
 ```
-python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.1 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.02 --calibrate=True --uncertainty_lb=100 --seed=243 --checkpoint_interval=-1
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.1 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.02 --calibrate=True --uncertainty_lb=100 --seed=243 
 ```  
 </details>
 
@@ -85,7 +85,7 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
  <details><summary>Calibrated DAB with pre-trained ResNet-50 on ImageNet.   </summary>
 
 ```
-python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.04 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.04 --calibrate=True --uncertainty_lb=100 --seed=2433 --backpropagate=False --checkpoint_interval=-1
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.04 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.04 --calibrate=True --uncertainty_lb=100 --seed=243 --backpropagate=False 
 ```  
 </details>
 
@@ -94,7 +94,7 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
  <details><summary>DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
 
 ```
-python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.1 --rdfc_arimoto_learning_rate=0.4 --dab_tau=2.0 --beta=0.01 --calibrate=False --seed=243 --checkpoint_interval=-1
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.1 --rdfc_arimoto_learning_rate=0.4 --dab_tau=2.0 --beta=0.01 --calibrate=False --seed=243 
 ```  
 </details>
 
@@ -103,7 +103,7 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
  <details><summary> DAB with pre-trained ResNet-50 on ImageNet.   </summary>
 
 ```
-python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.05 --rdfc_arimoto_learning_rate=0.5 --dab_tau=2.0 --beta=0.005 --calibrate=False --seed=243 --backpropagate=False --checkpoint_interval=-1
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.05 --rdfc_arimoto_learning_rate=0.5 --dab_tau=2.0 --beta=0.005 --calibrate=False --seed=243 --backpropagate=False 
 ```  
 </details>
 
