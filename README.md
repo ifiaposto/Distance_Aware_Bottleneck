@@ -60,6 +60,14 @@ python synthetic_regression_demo.py --example=2 --codebook_size=2
 
 ### Cifar10
 
+</details>
+
+ <details><summary>Train DAB on CIFAR-10 (Tables 2, 3, 4 in the paper).   </summary>
+
+```
+python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epochs=200 --seed=3 --checkpoint_interval=-1
+```  
+
 ### ImageNet-1K
 
 ## Evaluate DAB
