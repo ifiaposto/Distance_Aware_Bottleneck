@@ -179,6 +179,6 @@ url={https://openreview.net/forum?id=zMGUDsPopK}
 
 ## Contact
 
-For any questions or problems using the library, please don't hesitate to contact me at ifiaposto@gmail.com.
+For any questions or problems using the library, please contact me at ifiaposto@gmail.com.
 
 
