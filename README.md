@@ -58,18 +58,54 @@ python synthetic_regression_demo.py --example=2 --codebook_size=2
 ```  
 </details>
 
-### Cifar10
+### Cifar10 (Tables 2, 3, 4 in the paper)
 
 </details>
 
- <details><summary>Train DAB on CIFAR-10 (Tables 2, 3, 4 in the paper).   </summary>
+ <details><summary>Train DAB on CIFAR-10 .   </summary>
 
 ```
 python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epochs=200 --seed=3 --checkpoint_interval=-1
 ```  
 </details>
 
-### ImageNet-1K
+### ImageNet-1K  (Table 5 in the paper)
+
+</details>
+
+ <details><summary>Calibrated DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.1 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.02 --calibrate=True --uncertainty_lb=100 --seed=243 --checkpoint_interval=-1
+```  
+</details>
+
+</details>
+
+ <details><summary>Calibrated DAB with pre-trained ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.04 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.04 --calibrate=True --uncertainty_lb=100 --seed=2433 --backpropagate=False --checkpoint_interval=-1
+```  
+</details>
+
+</details>
+
+ <details><summary>DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.1 --rdfc_arimoto_learning_rate=0.4 --dab_tau=2.0 --beta=0.01 --calibrate=False --uncertainty_lb=100 --seed=243 --checkpoint_interval=-1
+```  
+</details>
+
+</details>
+
+ <details><summary> DAB with pre-trained ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.04 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.04 --calibrate=True --uncertainty_lb=100 --seed=2433 --backpropagate=False --checkpoint_interval=-1
+```  
+</details>
 
 ## Evaluate DAB
 
@@ -77,11 +113,9 @@ python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epoch
 
 You can download the trained DAB models presented in the paper [here](https://drive.google.com/file/d/1Ql1pJV3xFgIgLabqWegeNW74WCdwpmNL/view?usp=drive_link).
 
-### Commands
+### Cifar10
 
-#### Cifar10
-
-#### ImageNet-1K
+### ImageNet-1K
 
 ## Citation
 
