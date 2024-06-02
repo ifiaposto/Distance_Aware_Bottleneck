@@ -165,6 +165,18 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
 
 ## Citation
 
+If you use this repository, please cite:
+
+```
+@inproceedings{dab_apostoletal,
+title={A Rate-Distortion View of Uncertainty Quantification},
+author={Apostolopoulou, Ifigeneia and Eysenbach, Benjamin and Nielsen, Frank and Dubrawski, Artur},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=zMGUDsPopK}
+}
+```
+
 ## Contact
 
 For any questions or problems using the library, please don't hesitate to contact me at ifiaposto@gmail.com.
