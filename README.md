@@ -62,7 +62,7 @@ python synthetic_regression_demo.py --example=2 --codebook_size=2
 
 </details>
 
- <details><summary>Train DAB on CIFAR-10 .   </summary>
+ <details><summary>Train DAB WideResNet 28-10 on CIFAR-10 .   </summary>
 
 ```
 python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epochs=200 --seed=3
@@ -115,7 +115,53 @@ You can download the trained DAB models presented in the paper [here](https://dr
 
 ### Cifar10
 
+</details>
+
+ <details><summary> DAB WideResNet 28-10 on CIFAR-10.   </summary>
+
+```
+python run_cifar.py --num_cores=4 --dab_dim=8 --codebook_size=10 --dab_tau=1.0 --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/cifar/ 
+```  
+</details>
+
 ### ImageNet-1K
+</details>
+
+ <details><summary> DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --dab_tau=2.0 --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/imagenet_finetuned_ood/ 
+```  
+</details>
+
+
+</details>
+
+ <details><summary> DAB with pre-trained ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --dab_tau=2.0  --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/imagenet_pretrained_ood/
+```  
+</details>
+
+</details>
+
+ <details><summary> Calibrated DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --dab_tau=2.0 --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/imagenet_finetuned_calibrated/ 
+```  
+</details>
+
+
+</details>
+
+ <details><summary> Calibrated DAB with pre-trained ResNet-50 on ImageNet.   </summary>
+
+```
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --dab_tau=2.0  --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/imagenet_pretrained_calibrated/
+```  
+</details>
 
 ## Citation
 
