@@ -67,6 +67,7 @@ python synthetic_regression_demo.py --example=2 --codebook_size=2
 ```
 python run_cifar.py  --num_cores=4  --dab_dim=8 --codebook_size=10 --train_epochs=200 --seed=3 --checkpoint_interval=-1
 ```  
+</details>
 
 ### ImageNet-1K
 
