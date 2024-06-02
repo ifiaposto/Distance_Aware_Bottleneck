@@ -103,7 +103,7 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
  <details><summary> DAB with pre-trained ResNet-50 on ImageNet.   </summary>
 
 ```
-python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.04 --rdfc_arimoto_learning_rate=0.1 --dab_tau=2.0 --beta=0.04 --calibrate=True --uncertainty_lb=100 --seed=2433 --backpropagate=False --checkpoint_interval=-1
+python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --base_learning_rate=0.05 --rdfc_arimoto_learning_rate=0.5 --dab_tau=2.0 --beta=0.005 --calibrate=False --uncertainty_lb=100 --seed=243 --backpropagate=False --checkpoint_interval=-1
 ```  
 </details>
 
