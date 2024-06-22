@@ -1,12 +1,12 @@
   <img src="https://github.com/ifiaposto/Distance_Aware_Bottleneck/assets/11561732/91091080-4df2-47ed-b836-fbe930132cf6" alt="dab" width="800px" height="400px">
 
-## Distance Aware Bottleneck
+# Distance Aware Bottleneck
 
 This repo contains the code for [*A Rate-Distortion View of Uncertainty Quantification*](https://arxiv.org/abs/2406.10775), which is accepted for publication at ICML 2024.
 
 ## Citation
 
-If you use this repository, please cite:
+If you found our code or paper helpful, please cite it:
 
 ```
 @inproceedings{dab_apostoletal,
