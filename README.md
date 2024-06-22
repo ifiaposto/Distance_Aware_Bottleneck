@@ -1,6 +1,24 @@
   <img src="https://github.com/ifiaposto/Distance_Aware_Bottleneck/assets/11561732/91091080-4df2-47ed-b836-fbe930132cf6" alt="dab" width="800px" height="400px">
 
-# Distance Aware Bottleneck
+## Distance Aware Bottleneck
+
+This repo contains the code for [*A Rate-Distortion View of Uncertainty Quantification*](https://arxiv.org/abs/2406.10775), which is accepted for publication at ICML 2024.
+
+## Citation
+
+If you use this repository, please cite:
+
+```
+@inproceedings{dab_apostoletal,
+title={A Rate-Distortion View of Uncertainty Quantification},
+author={Apostolopoulou, Ifigeneia and Eysenbach, Benjamin and Nielsen, Frank and Dubrawski, Artur},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://arxiv.org/abs/2406.10775}
+}
+
+```
+
 
 ## Install
 
@@ -145,7 +163,6 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
 
  <details><summary> Calibrated DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
 
-```
 python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --dab_tau=2.0 --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/imagenet_finetuned_calibrated/ 
 ```  
 </details>
@@ -160,18 +177,7 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
 ```  
 </details>
 
-## Citation
 
-If you use this repository, please cite:
-
-```
-@inproceedings{dab_apostoletal,
-title={A Rate-Distortion View of Uncertainty Quantification},
-author={Apostolopoulou, Ifigeneia and Eysenbach, Benjamin and Nielsen, Frank and Dubrawski, Artur},
-booktitle={Forty-first International Conference on Machine Learning},
-year={2024},
-url={https://openreview.net/forum?id=zMGUDsPopK}
-}
 ```
 
 ## Contact
