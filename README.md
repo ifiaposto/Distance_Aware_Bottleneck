@@ -162,7 +162,8 @@ python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_cor
 </details>
 
  <details><summary> Calibrated DAB with fine-tuned ResNet-50 on ImageNet.   </summary>
- ```
+   
+```
 python run_imagenet.py --codebook_size=1000 --dab_dim=80 --num_cores=4 --per_core_batch_size=256 --dab_tau=2.0 --eval_only=True --saved_model_dir=<ABSOLUTE_PATH>/trained_models/imagenet_finetuned_calibrated/ 
 ```  
 </details>
