@@ -3,6 +3,8 @@
 
  <img src="https://github.com/ifiaposto/Distance_Aware_Bottleneck/assets/11561732/250606f3-542e-4167-8bd0-3860520d4c23" alt="dab" width="1000px" height="300px">
 
+ <img src="https://github.com/ifiaposto/dab_compare/assets/11561732/0a66cb2c-0e46-4eb8-978a-86113bf1d683" alt="dab" width="1000px" height="500px">
+
 # Distance Aware Bottleneck
 
 ## Install
