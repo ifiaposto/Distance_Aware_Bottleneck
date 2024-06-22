@@ -1,4 +1,4 @@
-  <img src="https://github.com/ifiaposto/Distance_Aware_Bottleneck/assets/11561732/91091080-4df2-47ed-b836-fbe930132cf6" alt="dab" width="1000px" height="600px">
+  <img src="https://github.com/ifiaposto/Distance_Aware_Bottleneck/assets/11561732/91091080-4df2-47ed-b836-fbe930132cf6" alt="dab" width="800px" height="400px">
 
 # Distance Aware Bottleneck
 
