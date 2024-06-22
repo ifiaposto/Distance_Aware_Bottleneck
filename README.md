@@ -12,7 +12,7 @@ If you use this repository, please cite:
 @inproceedings{dab_apostoletal,
 title={A Rate-Distortion View of Uncertainty Quantification},
 author={Apostolopoulou, Ifigeneia and Eysenbach, Benjamin and Nielsen, Frank and Dubrawski, Artur},
-booktitle={Forty-first International Conference on Machine Learning},
+booktitle={International Conference on Machine Learning},
 year={2024},
 url={https://arxiv.org/abs/2406.10775}
 }
