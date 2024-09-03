@@ -2,7 +2,7 @@
 
 # Distance Aware Bottleneck
 
-This repo contains the code for [*A Rate-Distortion View of Uncertainty Quantification*](https://arxiv.org/abs/2406.10775), which is accepted for publication at ICML 2024.
+This repo contains the code for the paper [*A Rate-Distortion View of Uncertainty Quantification*](https://arxiv.org/abs/2406.10775), which was presented at ICML 2024.
 
 ## Citation
 
